@@ -5,16 +5,16 @@ namespace ChangeUserPassword.Models
 {
     public class ChangePasswordModel
     {
-        [Required]
+        [Required(ErrorMessage = "The username is required.")]
         [Display(Name = "Username")]
         public string UserName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "The current password is required.")]
         [DataType(DataType.Password)]
         [Display(Name = "Current password")]
-        public string OldPassword { get; set; }
+        public string CurrentPassword { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "The new password is required.")]
         [DataType(DataType.Password)]
         [Display(Name = "New password")]
         public string NewPassword { get; set; }

@@ -1,0 +1,18 @@
+﻿.input-fullwidth {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    min-height: 28px;
+}
+
+.alert.alert-error > ul 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.modal-body > div:last-child 
+{
+    margin-bottom: 0;
+}
